@@ -1,0 +1,24 @@
+*{margin: 0; padding: 0; box-sizing: border-box; font-family: 'Courier New', Courier, monospace;}
+html,body{width: 100%;}
+
+h1{text-align: center;}
+
+.container{
+    max-width: 400px;
+    margin: 10px auto;
+    text-align: center;
+    border: 1px solid black;
+}
+
+.item{
+    background-color:#ccc;
+    margin: 5px;
+    flex: 1;
+    font-weight: bold;
+}
+
+.flex{display: flex;}
+
+.nowrap{flex-wrap: nowrap;}
+.wrap{flex-wrap: wrap;}
+.wrap-reverse{flex-wrap: wrap-reverse;}

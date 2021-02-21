@@ -1,0 +1,29 @@
+*{margin: 0; padding: 0; box-sizing: border-box; font-family: 'Courier New', Courier, monospace;}
+html,body{width: 100%;}
+
+h1{text-align: center;}
+
+.container{
+    max-width: 400px;
+    margin: 10px auto;
+    text-align: center;
+    border: 1px solid black;
+}
+
+.item{
+    background-color: rgb(247, 58, 58);
+    margin: 5px;
+    flex: 1;
+}
+
+.flex{
+    display: flex;
+}
+
+.flex-wrap{
+    flex-wrap: wrap;
+}
+
+.flex-item-1{
+    flex: 1;
+}
