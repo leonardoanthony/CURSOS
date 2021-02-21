@@ -1,0 +1,80 @@
+*{margin: 0;padding: 0;box-sizing: border-box;font-family:monospace;}
+body > div {
+	padding: 40px 0;
+}
+
+body > div:nth-of-type(even) {
+	background: rgba(0, 0, 0, 0.137);
+}
+h1{
+    text-align: center;
+    font-size: 1.5em;
+    
+}
+
+section{
+    max-width: 400px;
+    margin: 0 auto;
+    border: 1px solid rgb(100, 100, 100);
+}
+
+.item{
+    text-align: center;
+    background-color: tomato;
+    margin: 5px;
+    font-size: 1.25em;
+}
+
+.grid{display: grid;}
+
+.grid-template-areas-1{
+    grid-template-areas:
+    "logo nav nav"
+    "sidenav content advert"
+    "sidenav footer footer";
+}
+
+.grid-template-areas-2{
+    grid-template-areas:
+    "sidenav logo nav"
+    "sidenav content advert"
+    "sidenav content footer";
+}
+
+@media (max-width: 600px){
+    .grid-template-areas-2{
+        grid-template-areas:
+        "logo"
+        "nav"
+        "sidenav"
+        "content"
+        "advert"
+        "footer";
+    }
+}
+
+.logo{grid-area: logo;}
+.nav{grid-area: nav;}
+.sidenav{grid-area: sidenav;}
+.content{grid-area: content;}
+.advert{grid-area: advert;}
+.footer{grid-area: footer;}
+
+.grid-template-areas-3{
+    grid-template-columns: 100px 200px 100px;
+    grid-template-rows: 50px 150px 50px ;
+    grid-template-areas:
+    "logo nav nav"
+    "sidenav content advert"
+    "sidenav footer footer";
+}
+
+.grid-template-areas-4{
+    grid-template-areas:
+    "logo       nav         nav"
+    "......     content     advert"
+    "sidenav    footer      ......";
+}
+
+
+
