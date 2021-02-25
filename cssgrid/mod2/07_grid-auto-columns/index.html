@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GRID</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div>
+        <h1>grid-auto-columns: 80px</h1>
+        <section class="grid grid-auto-columns">
+            <div class="item ">1fr</div>
+            <div class="item ">1fr</div>
+            <div class="item ">80px</div>
+            <div class="item ">80px</div>
+            <div class="item ">80px</div>
+            <div class="item item-6">80px</div>
+        </section>
+    </div>
+
+    <div>
+        <h1>grid-auto-columns: 50px 100px</h1>
+        <section class="grid grid-auto-columns-2">
+            <div class="item ">1fr</div>
+            <div class="item ">1fr</div>
+            <div class="item ">50px</div>
+            <div class="item ">100px</div>
+            <div class="item ">50px</div>
+            <div class="item item-6">100px</div>
+        </section>
+    </div>
+
+    <div>
+        <h1>grid-auto-columns: não definido</h1>
+        <section class="grid grid-auto-columns-3">
+            <div class="item ">1fr</div>
+            <div class="item ">1fr</div>
+            <div class="item ">3</div>
+            <div class="item ">4</div>
+            <div class="item ">5</div>
+            <div class="item item-6">6</div>
+        </section>
+    </div>
+
+  
+    
+    
+</body>
+</html>
