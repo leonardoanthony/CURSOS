@@ -1,0 +1,61 @@
+*{margin: 0;padding: 0;box-sizing: border-box;font-family:monospace;}
+body > div {
+	padding: 40px 0;
+}
+
+body > div:nth-of-type(even) {
+	background: rgba(0, 0, 0, 0.137);
+}
+h1{
+    text-align: center;
+    font-size: 1.5em;  
+}
+
+p{
+    text-align: center;
+}
+
+section{
+    max-width: 400px;
+    margin: 0 auto;
+    border: 1px solid rgb(100, 100, 100);
+}
+
+.item{
+    text-align: center;
+    background-color: tomato;
+    /* margin: 5px; */
+    font-size: 1.25em;
+}
+
+.grid{display: grid;}
+
+.item{
+    text-align: center;
+    background-color: tomato;
+    margin: 5px;
+    font-size: 1.25em;
+}
+
+.grid-1{
+   grid: 100px / 1fr 1fr; 
+}
+
+.grid-2{
+    grid: 100px / auto-flow 100px 50px;
+}
+
+.grid-3{
+    grid:
+    "logo nav nav" 50px
+    "sidenav content advert" 150px
+    "sidenav footer footer" 50px
+    / 100px 1fr 80px;
+}
+
+.logo{grid-area: logo;}
+.nav{grid-area: nav;}
+.sidenav{grid-area:sidenav;}
+.content{grid-area: content;}
+.advert{grid-area: advert;}
+.footer{grid-area: footer;}
