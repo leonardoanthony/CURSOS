@@ -4,7 +4,7 @@ a{text-decoration: none;}
 li{list-style: none;}
 body{font-family: 'Volkhov', Georgia, serif;}
 
-/* img{max-width: 100px;} */
+img{max-width: 100%; display: block;border-radius: 5px;}
 
 /* GRID GERAL */
 
@@ -81,31 +81,35 @@ header .logo{
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/* CONTENT */
 
 .content{
     grid-area: content;
 }
 
+
+/* ANUNCIOS */
+
+
 .anuncios{
     grid-area: anuncios;
+    background: #fafbfc;
+    display: grid;
+    align-content: start;
+    padding: 30px;
+    gap: 30px;
 }
+
+
+
+
+
+
+/* FOOTER */
 
 .footer{
     grid-area: footer;
+    background: linear-gradient(135deg, #8844ee, #b07dfb);
+    text-align: center;
+    padding: 30px;
 }
