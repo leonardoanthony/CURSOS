@@ -82,6 +82,18 @@ header .logo{
     margin-left: 20px;
 }
 
+@media (max-width: 760px){
+    .header{
+        grid-template-columns: auto;
+    }
+    .logo{
+        margin: 0 auto 30px auto;
+    }
+    .header nav{
+        margin: 0 auto;
+    }
+}
+
 
 /* SIDENAV */
 
@@ -105,6 +117,42 @@ header .logo{
 
 .sidenav li a:hover{
     background: #b07dfb;
+}
+
+@keyframes seta{
+    from{
+        right: 30px;
+    } 
+    to{
+        right: 20px;
+    }
+}
+
+@media (max-width: 760px) {
+    .sidenav {
+        position: relative;
+        padding: 0 30px;
+        overflow-x:auto;
+        -webkit-overflow-scrolling:touch;
+        -ms-overflow-style: -ms-autohiding-scrollbar;
+    }
+    .sidenav:after{
+        content: "→";
+        position: absolute;
+        top: 5px;
+        right: 30px;
+        color: rgba(0, 0, 0, .5);
+        animation: seta .5s ease-in 0s infinite alternate;
+    }
+    .sidenav ul{
+        display: flex;
+    }
+    .sidenav ul li{
+        flex: 1 0 100px;
+    }
+    .sidenav ul li a{
+        margin: 30px 30px 30px 0;
+    }
 }
 
 
