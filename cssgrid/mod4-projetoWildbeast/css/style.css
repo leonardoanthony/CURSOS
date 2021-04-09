@@ -4,7 +4,12 @@ a{text-decoration: none;}
 li{list-style: none;}
 body{font-family: 'Volkhov', Georgia, serif;}
 
-img{max-width: 100%; display: block;border-radius: 5px;}
+img {
+    max-width: 100%;
+    width: 100%;
+    border-radius: 5px;
+    display: block;
+  }
 
 /* GRID GERAL */
 
@@ -81,11 +86,47 @@ header .logo{
 }
 
 
+
 /* CONTENT */
 
 .content{
     grid-area: content;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
 }
+
+.col-wide{
+    grid-column: 1 / -1;
+}
+
+.imagem-1{
+    grid-row: span 2;
+    align-self: end;
+}
+
+.imagem-2{
+    align-self: end;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /* ANUNCIOS */
@@ -99,10 +140,6 @@ header .logo{
     padding: 30px;
     gap: 30px;
 }
-
-
-
-
 
 
 /* FOOTER */
