@@ -1,9 +1,9 @@
 <footer>
 			<nav class="nav-footer">
 				<ul>
-					<li class="current_page_item"><a href="index.html">Menu</a></li>
-					<li><a href="sobre.html">Sobre</a></li>
-					<li><a href="contato.html">Contato</a></li>
+					<li class="current_page_item"><a href="/">Menu</a></li>
+					<li><a href="/rest.wp/sobre/">Sobre</a></li>
+					<li><a href="/rest.wp/contato/">Contato</a></li>
 				</ul>
 			</nav>
 
