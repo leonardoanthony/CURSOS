@@ -1,0 +1,31 @@
+*{margin:0;padding: 0;box-sizing: border-box;}
+html,body{height: 100%;font-family: Georgia,serif;color:#252525}
+.container{max-width: 80%;margin: 0 auto;}
+.clear{clear: both;}
+/* MENU */
+
+.menu{
+    background-color: #252525;
+    padding: 20px 0;
+}
+
+.menu-logo{
+    float: left;
+}
+
+.menu-nav{
+    float: right;
+    padding: 10px 0;
+}
+
+.menu-nav li{
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.menu-nav a{
+    color: white;
+    text-decoration: none;
+    font-size: 1.125em;
+}
+
