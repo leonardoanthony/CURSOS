@@ -29,3 +29,31 @@ html,body{height: 100%;font-family: Georgia,serif;color:#252525}
     font-size: 1.125em;
 }
 
+/* INTRO */
+
+.intro{
+    background: url(../img/bg-intro.jpg) no-repeat center center;
+    background-size: cover;
+    padding: 150px 0;
+    color: #fff;
+    text-align: center;
+}
+
+.intro h1{
+    font-size: 3em;
+    text-transform: uppercase;
+}
+
+.intro h1::after{
+    content: '';
+    display: block;
+    height: 4px;
+    width: 20px;
+    background-color: #fff;
+    margin: 10px auto;
+}
+
+.intro p{
+    font-size: 1.125em;
+    font-style: italic;
+}
