@@ -31,3 +31,19 @@
 .grid-10{ width: calc(83,333% - 20px);}
 .grid-11{ width: calc(91,666% - 20px);}
 .grid-12{ width: calc(100% - 20px);}
+
+@media (max-width: 739px){
+    .container{
+        width: 300px;
+    }
+
+    .grid-1, .grid-2, .grid-3,
+    .grid-4, .grid-5, .grid-6,
+    .grid-7, .grid-8, .grid-9,
+    .grid-10, .grid-11, .grid-12{
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+        float: none;
+    }
+}
