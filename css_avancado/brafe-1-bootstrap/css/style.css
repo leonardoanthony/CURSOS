@@ -14,6 +14,10 @@ body {
 	box-sizing: border-box;
 }
 
+img{
+	display: block;
+}
+
 /* Menu */
 
 .menu {
@@ -126,6 +130,10 @@ h2.produtos-mineiro::before {
 }
 
 /* Locais */
+
+.locais-item img{
+	width: 100%;
+}
 
 .locais-item h2 {
 	font-size: 2.25em;
