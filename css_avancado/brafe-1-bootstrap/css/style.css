@@ -22,12 +22,36 @@ img{
 
 .menu {
 	background: #252525;
+	padding: 20px 0;
 }
 
-.menu-nav a {
+.menu-nav ul{
+	list-style-type: none;
+	float: right;
+}
+
+.menu-nav ul li{
+	display: inline-block;
+}
+
+.menu-nav ul li a {
 	text-decoration: none;
 	color: #fff;
 	font-size: 1.125em;
+	padding: 10px;
+}
+
+@media (max-width:768px) {
+	.menu-logo img{
+		margin: 0 auto 10px auto;
+	}
+	.menu-nav{
+		text-align: center;
+	}
+	.menu-nav ul{
+		float: none;
+		width: 100%;
+	}
 }
 
 /* Intro */
@@ -36,11 +60,14 @@ img{
 	background: url('../img/bg-intro.jpg') no-repeat center center;
 	background-size: cover;
 	color: #fff;
+	padding: 150px 0;
 }
 
 .intro h1 {
 	text-transform: uppercase;
 	font-size: 3em;
+	font-weight: bold;
+	text-align: center;
 }
 
 .intro h1::after {
@@ -49,17 +76,36 @@ img{
 	width: 20px;
 	height: 4px;
 	background: #fff;
+	margin: 10px auto;
 }
 
 .intro p {
 	font-style: italic;
 	font-size: 1.125em;
+	text-align: center;
+}
+
+@media (max-width:768px) {
+	.intro{
+		padding: 40px 0;
+	}
 }
 
 /* Sobre */
 
+.sobre{
+	padding: 60px;
+}
+
 .sobre h2 {
 	font-size: 2.25em;
+	text-align: center;
+	font-weight: bold;
+	margin-bottom: 20px;
+}
+
+.sobre-item img{
+	width: 100%;
 }
 
 .sobre-item h3 {
@@ -71,12 +117,24 @@ img{
 	font-weight: normal;
 	text-align: center;
 	position: relative;
+	width: 220px;
+	padding: 5px 0 10px 0;
+	top: -25px;
 }
 
 .sobre > p {
 	font-size: 1.125em;
 	line-height: 1.4em;
 	font-style: italic;
+	text-align: center;
+	margin: 0 auto;
+	width: 460px;
+}
+
+@media (max-width: 768px){
+	.sobre > p{
+		width: 220px;
+	}
 }
 
 /* Produtos */
