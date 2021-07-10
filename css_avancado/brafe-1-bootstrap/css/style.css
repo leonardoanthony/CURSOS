@@ -242,15 +242,24 @@ h2.produtos-mineiro::before {
 
 .assine {
 	background: #e7e4d8;
+	padding: 60px 15px;
 }
 
 .assine-info h2 {
 	font-size: 2.25em;
+	font-weight: bold;
 }
 
 .assine-info p {
 	font-size: 1.5em;
 	font-style: italic;
+	margin-bottom: 20px;
+}
+
+.assine form{
+	display: flex;
+	flex-wrap: nowrap;
+	max-width: 100%;
 }
 
 .assine form label {
@@ -263,6 +272,10 @@ h2.produtos-mineiro::before {
 	font-size: 1.5em;
 	font-style: italic;
 	font-family: Georgia, serif;
+	padding: 10px;
+	align-self: flex-start;
+	max-width: 100%;
+	
 }
 
 .assine button {
@@ -273,15 +286,26 @@ h2.produtos-mineiro::before {
 	font-size: 1.5em;
 	color: #fff;
 	cursor: pointer;
+	padding: 13px;
+	align-self: flex-start;
+}
+
+@media (max-width:768px){
+	.assine form{
+		flex-wrap: wrap;
+		
+	}
 }
 
 /*Footer*/
 
 .footer {
 	background: #d6d3c8;
+	padding: 40px 15px;
 }
 
 .footer p {
 	font-size: 1.125em;
 	line-height: 1.4em;
+	margin-bottom: 20px;
 }
