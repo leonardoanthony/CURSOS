@@ -44,4 +44,168 @@ body{
     grid-template-columns: 100px 300px 1fr;
     gap: 20px;
     margin-bottom: 4rem;
+    padding: 0 10px;
+}
+
+/* ANIMAIS */
+
+.titulo{
+    font-family: Georgia;
+    grid-column: 1 / 4;
+    font-size: 6em;
+    font-variant: small-caps;
+    font-weight: normal;
+    line-height: 1em;
+}
+
+.animais-lista{
+    grid-column: 2;
+    height: 370px;
+    overflow-y: scroll;
+}
+
+.animais-lista::-webkit-scrollbar{
+    width: 18px;
+}
+
+.animais-lista::-webkit-scrollbar-thumb{
+    background-color: #FB5;
+    border-left: 4px solid #faf6ed;
+}
+
+.animais-lista::-webkit-scrollbar-track{
+    background-color:  #faf6ed;
+}
+
+.animais-descricao{
+    grid-column: 3;
+}
+
+.animais-descricao section{
+    margin-bottom: 3em;
+}
+
+.animais-descricao h2{
+    font-family: monospace;
+    text-transform: uppercase;
+    color: tomato;
+    margin-bottom: 1em;
+    letter-spacing: .1em;
+} 
+
+.animais-descricao h2::before{
+    content:'';
+    display: inline-block;
+    width: 40px;
+    height: 10px;
+    margin-right: 10px;
+    background-color: #FB5;
+} 
+
+.animais-descricao p{
+    font-family: helvetica;;
+    margin-bottom: 1em;
+} 
+
+/* FAQ */
+
+.faq-lista{
+    grid-column: 2 / 4;
+}
+
+.faq-lista dt{
+    font-family: monospace;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: tomato;
+    margin-bottom: 1em;
+    font-size: 1.5em;
+    letter-spacing: .1em;
+}
+
+.faq-lista dt::before{
+    content:'';
+    display: inline-block;
+    width: 20px;
+    height: 10px;
+    margin-right: 10px;
+    background-color: #FB5;
+}
+
+.faq-lista dd{
+    font-family: Helvetica;
+    margin-bottom: 1em;
+    margin-left: 30px;
+}
+
+/* CONTATO */
+
+.mapa{
+    grid-column: 2;
+}
+
+.dados{
+    grid-column: 3;
+}
+
+.dados li{
+    margin-bottom: 1em;
+    font-size: 1em;
+    font-family: Helvetica;
+}
+
+.dados li::before{
+    content:'';
+    display: inline-block;
+    width: 20px;
+    height: 10px;
+    margin-right: 10px;
+    background-color: #FB5;
+}
+
+.copy{
+    grid-column: 3 / 5;
+}
+
+.copy p{
+    padding: 20px;
+    font-family: monospace;
+    font-size: 1.2em;
+    font-weight: bold;
+    background: #FB5;
+    margin-bottom: 20px;
+}
+
+@media (max-width:700px){
+    body{
+        grid-template-columns: 1fr;
+    }
+    .menu, .grid-section, .copy{
+        grid-column: 1;
+    }
+
+    .grid-section{
+        grid-template-columns: 100px 1fr;
+        gap: 10px;
+    }
+
+    .animais-lista{
+        grid-column: 1;
+    }
+
+    .titulo{
+        font-size: 3em;
+    }
+
+    .mapa, .dados, .faq-lista{
+        grid-column: 1 / 3;
+    }
+
+    .menu{
+        margin-top: 0;
+    }
+
+    .copy p{
+        margin-bottom: 0;
+    }
 }
