@@ -1,15 +1,19 @@
-const animaisSection = document.getElementById('animais');
-console.log(animaisSection);
+console.log('1_Todas as imagens');
+const images = document.getElementsByTagName('img');
+console.log(images)
 
-const gridSection = document.getElementsByClassName('grid-section');
-console.log(gridSection);
+console.log('2_Todas as imagens que comecem com Imagem');
+const imagensNome = document.querySelectorAll('img[src^="img/imagem"]');
+console.log(imagensNome);
 
-const navItem = document.getElementsByTagName('ul');
-console.log(navItem);
+console.log('3_Todos os links internos');
+const linksInternos = document.querySelectorAll('[href^="#"]');
+console.log(linksInternos);
 
-const animais = document.querySelector('.animais');
-console.log(animais);
+console.log('4_Primeiro H2 dentro de Animais Descrição');
+const animaisDescricao = document.querySelector('.animais-descricao h2');
+console.log(animaisDescricao);
 
-const animaisImg = document.querySelectorAll('.animais img');
-console.log(animaisImg);
-
+console.log('5_O último P do site');
+const ultimoP = document.querySelectorAll('p');
+console.log(ultimoP[--ultimoP.length]);
