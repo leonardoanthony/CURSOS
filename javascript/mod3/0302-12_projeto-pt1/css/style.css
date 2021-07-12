@@ -3,6 +3,10 @@ html, body{height: 100%;}
 img{display: block;max-width: 100%;}
 ul{list-style: none;}
 
+html.textoMaior{
+    font-size: 150%;
+}
+
 body{
     background: #faf6ed;
     color: #222;
