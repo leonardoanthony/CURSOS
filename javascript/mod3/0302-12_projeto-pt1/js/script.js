@@ -32,17 +32,50 @@ initTabNav();
 // Javascript 03 - 10
 // Accordion List
 
-const accordionList = document.querySelectorAll('.js-accordionList dt');
-const activeClass = 'ativo';
+function initAccordionList(){
 
-accordionList[0].classList.add(activeClass);
-accordionList[0].nextElementSibling.classList.add(activeClass);
+    const accordionList = document.querySelectorAll('.js-accordionList dt');
+    const activeClass = 'ativo';
 
-function activeAccordionList(){
-    this.classList.toggle(activeClass);
-    this.nextElementSibling.classList.toggle(activeClass);
+    accordionList[0].classList.add(activeClass);
+    accordionList[0].nextElementSibling.classList.add(activeClass);
+
+    function activeAccordionList(){
+        this.classList.toggle(activeClass);
+        this.nextElementSibling.classList.toggle(activeClass);
+    }
+
+    accordionList.forEach((item) => {
+        item.addEventListener('click', activeAccordionList);
+    });
+
 }
 
-accordionList.forEach((item) => {
-    item.addEventListener('click', activeAccordionList);
-});
+initAccordionList();
+
+
+
+// Javascript 03 - 11
+// Scroll Suave Link Interno
+
+function initSmoothScroll(){
+
+    const linksInternos = document.querySelectorAll('.js-menu a[href^="#"]');
+
+    function scrollSuave(event){
+        event.preventDefault();
+        const href = this.getAttribute('href');
+        const section = document.querySelector(href);
+        section.scrollIntoView({
+            behavior: 'smooth',
+            block: 'start',
+        })
+    }
+
+    linksInternos.forEach((link) => {
+        link.addEventListener('click', scrollSuave);
+    });
+
+}
+
+initSmoothScroll();
