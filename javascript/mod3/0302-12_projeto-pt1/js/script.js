@@ -79,3 +79,24 @@ function initSmoothScroll(){
 }
 
 initSmoothScroll();
+
+// Javascript 03 - 12
+// Animação ao scroll
+
+
+const sectionScroll = document.querySelectorAll('.js-scroll');
+sectionScroll[0].classList.add('ativo');
+
+function animaScroll(){
+
+    const windowTop = window.innerHeight * 0.6;
+
+    sectionScroll.forEach((section) => {
+        const sectionTop = section.getBoundingClientRect().top - windowTop;
+        if(sectionTop < 0){
+            section.classList.add('ativo');
+        }
+    });
+}
+
+window.addEventListener('scroll', animaScroll);
