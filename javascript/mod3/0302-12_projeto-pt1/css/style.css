@@ -237,3 +237,30 @@ body{
         transform: translate3d(0,0,0);
     }
 }
+
+.js .js-accordionList dd{
+    display: none;
+}
+.js-accordionList dd.ativo{
+    display: block;
+    animation: slideDown .8s forwards;
+}
+
+.js-accordionList dt:after{
+    content: ' ▼';
+}
+
+.js-accordionList dt.ativo:after{
+    content: ' ▲';
+}
+
+@keyframes slideDown{
+    from{
+        opacity: 0;
+        max-height: 0;
+    }
+    to{
+        opacity: 1;
+        max-height: 200px;
+    }
+}
